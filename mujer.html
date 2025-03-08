@@ -19,18 +19,18 @@
         }
         .container {
             max-width: 90%;
-            width: 500px; /* Aumentado de 400px a 500px */
+            width: 400px;
             background: rgba(255, 255, 255, 0.2);
-            padding: 30px; /* Aumentado */
+            padding: 20px;
             border-radius: 15px;
             box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
             display: none;
         }
         h1 {
-            font-size: 2.5em; /* Aumentado de 1.8em a 2.5em */
+            font-size: 1.8em;
         }
         .message {
-            font-size: 1.5em; /* Aumentado de 1.2em a 1.5em */
+            font-size: 1.2em;
             margin: 20px 0;
             color: black;
         }
@@ -38,8 +38,8 @@
             background: white;
             color: #ff758c;
             border: none;
-            padding: 15px 25px; /* Aumentado */
-            font-size: 1.5em; /* Aumentado de 1.2em a 1.5em */
+            padding: 10px 20px;
+            font-size: 1.2em;
             border-radius: 10px;
             cursor: pointer;
             transition: background 0.3s;
@@ -49,11 +49,11 @@
         }
         .gallery {
             display: flex;
-            justify-content: center;
+            flex-direction: column;
             gap: 10px;
         }
         .gallery img {
-            width: 50%; /* Aumentado de 45% a 50% */
+            width: 100%;
             border-radius: 10px;
         }
     </style>
@@ -61,19 +61,29 @@
 <body>
     <div class="container" id="vista1" style="display: block;">
         <h1>Feliz Día de la Mujer</h1>
-        <p class="message">Un abrazo y un beso para las 2 mujeres más hermosas e importantes de mi vida, quiero que sepan que las queremos mucho, las amamos y que sin ustedes no estaríamos donde estamos.</p>
+        <p class="message">Un abrazo y un beso para las 2 mujeres más hermosas e importantes
+                             de nuestras vidas, quiero que sepan que las queremos mucho, las 
+                             amamos y que sin ustedes no estaríamos donde estamos.</p>
         <button class="btn" onclick="mostrarVista(2)">Siguiente</button>
     </div>
 
     <div class="container" id="vista2">
         <h1>Feliz Día de la Mujer</h1>
-        <p class="message">Mi madre siendo la mujer que más admiro y que es una berraca y que le ha enfrentado la vida de una manera alegre, de esta hermosa mujer aprendí que la actitud lo es TODO!!!</p>
+        <p class="message">Lina, excelente madre y esposa, siendo la mujer que más 
+                            admiro y que es una berraca 
+                            y que le ha enfrentado la vida de una manera alegre, de esta 
+                            hermosa mujer aprendí que la actitud lo es TODO!!!</p>
+
         <button class="btn" onclick="mostrarVista(3)">Siguiente</button>
     </div>
 
     <div class="container" id="vista3">
         <h1>Feliz Día de la Mujer</h1>
-        <p class="message">Mi hermana siendo esa mujercita en crecimiento que es muy inteligente y con una gran imaginación, llena el mundo con tu sonrisa 😍</p>
+        <p class="message">Isabella, mi hermana y mi hija, siendo esa mujercita 
+                            en crecimiento que es muy 
+                            inteligente y con una gran imaginación, llena el mundo 
+                            con tu sonrisa 😍</p>
+
         <button class="btn" onclick="mostrarVista(4)">Siguiente</button>
     </div>
 

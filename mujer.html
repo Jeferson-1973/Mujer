@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Feliz Día de la Mujer</title>
+    <style>
+        body {
+            font-family: 'Arial', sans-serif;
+            background: linear-gradient(to right, #ff758c, #ff7eb3);
+            color: white;
+            text-align: center;
+            padding: 20px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            overflow: hidden;
+        }
+        .container {
+            max-width: 90%;
+            width: 400px;
+            background: rgba(255, 255, 255, 0.2);
+            padding: 20px;
+            border-radius: 15px;
+            box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+            display: none;
+        }
+        h1 {
+            font-size: 1.8em;
+        }
+        .message {
+            font-size: 1.2em;
+            margin: 20px 0;
+            color: black;
+        }
+        .btn {
+            background: white;
+            color: #ff758c;
+            border: none;
+            padding: 10px 20px;
+            font-size: 1.2em;
+            border-radius: 10px;
+            cursor: pointer;
+            transition: background 0.3s;
+        }
+        .btn:hover {
+            background: #ffe3e9;
+        }
+        .gallery {
+            display: flex;
+            justify-content: center;
+            gap: 10px;
+        }
+        .gallery img {
+            width: 45%;
+            border-radius: 10px;
+        }
+    </style>
+</head>
+<body>
+    <div class="container" id="vista1" style="display: block;">
+        <h1>Feliz Día de la Mujer</h1>
+        <p class="message">Un abrazo y un beso para las 2 mujeres más hermosas e importantes de mi vida, quiero que sepan que las queremos mucho, las amamos y que sin ustedes no estaríamos donde estamos.</p>
+        <button class="btn" onclick="mostrarVista(2)">Siguiente</button>
+    </div>
+
+    <div class="container" id="vista2">
+        <h1>Feliz Día de la Mujer</h1>
+        <p class="message">Mi madre siendo la mujer que más admiro y que es una berraca y que le ha enfrentado la vida de una manera alegre, de esta hermosa mujer aprendí que la actitud lo es TODO!!!</p>
+        <button class="btn" onclick="mostrarVista(3)">Siguiente</button>
+    </div>
+
+    <div class="container" id="vista3">
+        <h1>Feliz Día de la Mujer</h1>
+        <p class="message">Mi hermana siendo esa mujercita en crecimiento que es muy inteligente y con una gran imaginación, llena el mundo con tu sonrisa 😍</p>
+        <button class="btn" onclick="mostrarVista(4)">Siguiente</button>
+    </div>
+
+    <div class="container" id="vista4">
+        <h1>Feliz Día de la Mujer</h1>
+        <p class="message">Nosotros las amamos<br>Dios las bendiga</p>
+        <div class="gallery">
+            <img src="Lina.png" alt="Imagen 1">
+            <img src="Isabella.png" alt="Imagen 2">
+        </div>
+    </div>
+
+    <script>
+        function mostrarVista(num) {
+            document.querySelectorAll('.container').forEach(el => el.style.display = 'none');
+            document.getElementById('vista' + num).style.display = 'block';
+        }
+    </script>
+</body>
+</html>
